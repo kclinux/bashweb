@@ -1,0 +1,17 @@
+1.) Add following line to the end of /etc/services
+bashweb      50000/tcp                       # bashweb
+
+2.) move bashweb to /etc/xinetd.d/bashweb
+
+3.) move www.bash to /usr/sbin/www.bash
+
+4.) Set executable permisson on www.bash
+
+chmod 700 /usr/sbin/www.bash
+
+5.) Restart xinetd
+
+service xinetd restart
+
+Browse to http://<SERVER_IP>:50000/PASSWORD/ls -la
+to test
