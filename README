@@ -5,12 +5,10 @@ bashweb      50000/tcp                       # bashweb
 
 3.) move www.bash to /usr/sbin/www.bash
 
-4.) Set executable permisson on www.bash
-
+4. Set executable permisson
 chmod 700 /usr/sbin/www.bash
 
 5.) Restart xinetd
-
 service xinetd restart
 
 Browse to http://<SERVER_IP>:50000/PASSWORD/ls -la
